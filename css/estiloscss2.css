@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 50px;
+    background-image: url('../recursos/imagenes/universidad.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+h1 {
+    color: green;
+}
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+}
+input[type="text"], input[type="date"], input[type="email"], input[type="tel"] {
+    width: 350px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: green;
+    outline: none;
+}
+
+/* Button styling */
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.button-container button {
+    padding: 10px 20px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button-container button:hover {
+    background-color: #357abd;
+}

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    background-image: url('../recursos/imagenes/estudiantesmenu.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo a la izquierda, mensaje centrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 12px;
+    margin-top: 20px;
+}
+.welcome-message {
+    flex: 1;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    background: linear-gradient(135deg, green, #5AD3B1); /* Gradiente suave */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Efecto de texto degradado */
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    display: inline;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s ease; 
+}
+
+ul li a:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+ul li:hover {
+    transform: scale(1.1); 
+    background-color: #333; 
+}
+
+.content {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.content:hover {
+    transform: scale(1.05);
+    background-color: #e0f7fa; 
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Estudiantes</title>
+
+    <link rel="stylesheet" href="../css/estiloscss1.css">
+
+    <script src="../js/utilidades1.js"></script>
+    <script src="../js/gestionestudiantes.js"></script>
+    <script src="../js/estudiante.js"></script>
+    
+</head>
+<form>
+    <h1>Gestión de Estudiantes</h1>
+    <label for="identificacion">Identificación del estudiante:</label>
+    <input type="text" id="identificacion" name="identificacion" required pattern="[A-Za-z0-9]+" title="Debe contener solo caracteres alfanuméricos (letras y números)">
+   
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]+" title="Solo se permiten caracteres alfabéticos">
+    
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required max="2024-11-12">
+    
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Formato de correo: ejemplo@dominio.com">
+
+    <label for="telefono">Teléfono (opcional):</label>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8,15}" title="Debe ser numérico y tener entre 8 y 15 dígitos">
+</form>
+
+<div class="button-container">
+    <button type="button" onclick="guardar()">Guardar</button>
+    <button type="button" onclick="actualizar()">Actualizar</button>
+    <button type="button" onclick="eliminar()">Eliminar</button>
+    <button type="button" onclick="consultar()">Consultar</button>
+</div>
+
+</body>
+</html>

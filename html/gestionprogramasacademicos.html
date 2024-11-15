@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Programas Academicos</title>
+    <link rel="stylesheet" href="../css/estiloscss3.css">
+    <script src="../js/gestionprogramaacademicos.js"></script>
+    <script src="../js/programa.js"></script>
+    <script src="../js/utilidades1.js"></script>
+</head>
+
+<body>
+
+    <form action="">
+        <h1>Gestion de Programas Academicos</h1>
+
+        <label for="codigo">Codigo del Programa:</label>
+        <input type="text" id="codigo" autofocus required pattern="[A-Za-z0-9]+"
+            title="Debe contener solo caracteres alfanuméricos (letras y números)">
+        <p></p>
+
+        <label for="nombre_programa">Nombre del programa:</label>
+        <input type="text" id="nombre_programa">
+        <p></p>
+
+        <label for="duracion">Duracion:</label>
+        <input type="number" id="duracion" required min="1" title="Debe ser un número positivo">
+        <p></p>
+
+        <label for="modalidad">Modalidad</label>
+
+        <select name="modalidad" id="modalidad" required>
+
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="presencial">Presencial</option>
+            <option value="virtual">Virtual</option>
+            <option value="semipresencial">Semipresencial</option>
+        </select>
+        <p></p>
+
+        <label for="fecha_inicio">Fecha de inicio:</label>
+        <input type="date" id="fecha_inicio" required max="2024-11-12">
+        <p></p>
+    </form>
+
+    <div class="button-container">
+        <button type="button" onclick="guardar()">Guardar</button>
+        <button type="button" onclick="actualizar()">Actualizar</button>
+        <button type="button" onclick="eliminar()">Eliminar</button>
+        <button type="button" onclick="consultar()">Consultar</button>
+    </div>
+</body>
+
+</html>
